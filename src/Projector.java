@@ -4,7 +4,7 @@ public class Projector implements Device {
 	private DvdPlayer dvdPlayer;
 
 	public Projector() {
-		this.dvdPlayer = new DvdPlayer();
+		this.setDvdPlayer(new DvdPlayer());
 	}
 
 	@Override
@@ -23,5 +23,13 @@ public class Projector implements Device {
 	}
 
 	public void tvMode() {
+	}
+
+	public DvdPlayer getDvdPlayer() {
+		return dvdPlayer;
+	}
+
+	public void setDvdPlayer(DvdPlayer dvdPlayer) {
+		this.dvdPlayer = dvdPlayer;
 	}
 }
