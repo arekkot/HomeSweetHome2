@@ -4,9 +4,9 @@ public class Facade {
 	private CdPlayer cdPlayer;
 	private Amplifier amplifier;
 	private DvdPlayer dvdPlayer;
-	private Projector  projector;
-	private Lights  lights;
-	
+	private Projector projector;
+	private Lights lights;
+
 	public Facade() {
 		this.tuner = new Tuner();
 		this.cdPlayer = new CdPlayer();
@@ -17,9 +17,7 @@ public class Facade {
 	}
 
 	public void example() {
-		dvdPlayer.stop();	
+		dvdPlayer.stop();
 	}
-	
-	
 
 }
